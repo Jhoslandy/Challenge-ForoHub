@@ -1,104 +1,91 @@
+# 🌐 ForoHub - Plataforma de Foros Educativos 📚
 
-# 🌐 ForoHub - Plataforma de Foros Educativos  
-
-**ForoHub** es una plataforma desarrollada con Spring Boot que permite la creación y gestión de foros educativos. Diseñado con un enfoque en eficiencia, seguridad y facilidad de uso, ForoHub facilita la interacción entre usuarios, temas, cursos y respuestas.  
-
----
-
-## 📑 Tabla de Contenidos  
-1. 🛠️ [Características](#características)  
-2. 🏗️ [Arquitectura del Sistema](#arquitectura-del-sistema)  
-3. ⚙️ [Tecnologías Utilizadas](#tecnologías-utilizadas)  
-4. 🚀 [Configuración e Instalación](#configuración-e-instalación)  
-5. 🔗 [Endpoints Principales](#endpoints-principales)  
-6. 📂 [Estructura del Proyecto](#estructura-del-proyecto)  
-7. 📈 [Avance del Proyecto](#avance-del-proyecto)  
-8. 🤝 [Contribución](#contribución)  
-9. 📜 [Licencia](#licencia)  
+✨ **ForoHub** es una plataforma dinámica y segura, desarrollada con **Spring Boot**, que revoluciona la interacción en foros educativos. Con un enfoque en la eficiencia y la experiencia del usuario, facilita la creación y gestión de debates, temas, cursos y respuestas. La planificación y seguimiento de este proyecto se llevaron a cabo utilizando **Trello** para la gestión de tareas y **Notion** para la documentación integral. ✨
 
 ---
 
-## 🛠️ Características  
-- 🔐 **Gestión de Usuarios**:  
-  Sistema robusto de autenticación y autorización mediante tokens JWT, con soporte para múltiples roles (administrador, usuario).  
+## 🚀 Descripción y Características
 
-- 📝 **Gestión de Foros**:  
-  Posibilidad de crear, visualizar y responder a temas en diferentes categorías.  
+-   🔐 **Gestión de Usuarios**:
+    -   Sistema de autenticación robusto con **JWT**, que garantiza seguridad y acceso diferenciado por roles (administrador y usuario).
 
-- 📘 **Gestión de Cursos**:  
-  Asociación de cursos con temas y categorías para facilitar la organización temática.  
+-   📝 **Gestión de Foros**:
+    -   Capacidad para crear, visualizar, editar y responder a temas en diversas categorías, promoviendo la colaboración.
 
-- 📄 **Documentación de la API**:  
-  Explora y prueba los endpoints de la API utilizando Swagger (SpringDoc OpenAPI).  
+-   📘 **Gestión de Cursos**:
+    -   Asociación directa de temas con cursos, facilitando la organización del contenido educativo y su búsqueda.
 
-- 🛡️ **Seguridad**:  
-  Control de acceso basado en roles, garantizando que cada usuario acceda solo a los recursos autorizados.  
+-   📄 **Documentación de la API**:
+    -   Exploración y testeo de la API sin esfuerzo a través de **Swagger** (SpringDoc OpenAPI), lo que facilita el desarrollo y la integración.
 
 ---
 
-## 🏗️ Arquitectura del Sistema  
-El proyecto está diseñado con una arquitectura por capas para facilitar su mantenimiento y escalabilidad:  
-- 🖥️ **Capa API**: Contiene los controladores REST y configuraciones de seguridad.  
-- ⚙️ **Capa de Dominio**: Define las entidades, servicios y repositorios.  
-- 🗄️ **Capa de Infraestructura**: Incluye la configuración de base de datos, manejo de errores y seguridad.  
+## 🏗️ Arquitectura del Sistema
+
+El proyecto sigue una arquitectura modular y escalable, dividida en capas para una clara separación de responsabilidades:
+-   💻 **Capa de Presentación (API)**: Maneja las solicitudes REST y la seguridad de los puntos finales.
+-   ⚙️ **Capa de Lógica de Negocio (Dominio)**: Contiene la lógica central del negocio, como entidades, servicios y repositorios.
+-   🗄️ **Capa de Persistencia (Infraestructura)**: Se encarga de la interacción con la base de datos, el manejo de errores y configuraciones de seguridad.
 
 ---
 
-## ⚙️ Tecnologías Utilizadas  
-- 🧑‍💻 **Lenguaje**: Java 21  
-- 🌱 **Framework Principal**: Spring Boot  
-- 🗃️ **Base de Datos**: MySQL  
-- 📜 **Documentación**: SpringDoc OpenAPI (Swagger)  
-- 🔐 **Seguridad**: JWT, OAuth  
+## ⚙️ Tecnologías Utilizadas
+
+-   🧑‍💻 **Lenguaje**: Java 21
+-   🌱 **Framework**: Spring Boot
+-   🗃️ **Base de Datos**: MySQL
+-   📜 **Documentación**: SpringDoc OpenAPI (Swagger)
+-   🔒 **Seguridad**: JWT, OAuth
 
 ---
 
-## 🚀 Configuración e Instalación  
+## 🛠️ Configuración e Instalación
 
-### **Prerrequisitos**  
-- JDK 21  
-- Maven  
-- MySQL  
+### **Prerrequisitos**
+-   JDK 21
+-   Maven
+-   MySQL
 
-### **Pasos de Instalación**  
-1. **Clonar el repositorio**:  
-   ```bash  
-   git clone https://github.com/usuario/tu-proyecto.git  
-   cd tu-proyecto  
-   ```  
+### **Pasos de Instalación**
 
-2. **Configurar la base de datos**:  
-   - Crear una base de datos en MySQL.  
-   - Actualizar las credenciales en el archivo `application.properties`:  
-     ```properties  
-     spring.datasource.url=jdbc:mysql://localhost:3306/nombre_base_datos  
-     spring.datasource.username=tu_usuario  
-     spring.datasource.password=tu_contraseña  
-     ```  
+1.  **Clonar el repositorio**:
+    ```bash
+    git clone [https://github.com/usuario/tu-proyecto.git](https://github.com/usuario/tu-proyecto.git)
+    cd tu-proyecto
+    ```
 
-3. **Compilar y ejecutar la aplicación**:  
-   ```bash  
-   mvn clean install  
-   mvn spring-boot:run  
-   ```  
+2.  **Configurar la base de datos**:
+    -   Crea una base de datos en MySQL.
+    -   Actualiza las credenciales en el archivo `application.properties`:
+        ```properties
+        spring.datasource.url=jdbc:mysql://localhost:3306/nombre_base_datos
+        spring.datasource.username=tu_usuario
+        spring.datasource.password=tu_contraseña
+        ```
 
-4. **Acceder a la documentación de la API**:  
-   🌐 [Swagger UI](http://localhost:8080/swagger-ui.html)  
+3.  **Compilar y ejecutar la aplicación**:
+    ```bash
+    mvn clean install
+    mvn spring-boot:run
+    ```
 
----
-
-## 🔗 Endpoints Principales  
-
-| **Método** | **Endpoint**       | **Descripción**                          | **Ejemplo de Cuerpo (JSON)**            |  
-|------------|--------------------|------------------------------------------|----------------------------------------|  
-| POST       | `/auth/login`      | Autenticar un usuario.                   | `{ "username": "admin", "password": "1234" }` |  
-| GET        | `/users`           | Obtener lista de usuarios.               | -                                      |  
-| GET        | `/topics`          | Listar todos los temas de foros.         | -                                      |  
-| POST       | `/topics`          | Crear un nuevo tema en un foro.          | `{ "title": "Nuevo Tema", "message": "Texto" }` |  
+4.  **Acceder a la documentación de la API**:
+    🌐 [Swagger UI](http://localhost:8080/swagger-ui.html)
 
 ---
 
-## 📂 Estructura del Proyecto  
+## 🔗 Endpoints Principales
+
+| **Método** | **Endpoint** | **Descripción** | **Ejemplo de Cuerpo (JSON)** |
+|:---|:---|:---|:---|
+| `POST` | `/auth/login` | Autenticación de usuario. | `{ "username": "admin", "password": "1234" }` |
+| `GET` | `/users` | Obtiene la lista de usuarios. | - |
+| `GET` | `/topics` | Lista todos los temas de foros. | - |
+| `POST` | `/topics` | Crea un nuevo tema en un foro. | `{ "title": "Nuevo Tema", "message": "Texto" }` |
+
+---
+
+## 📂 Estructura del Proyecto
 
 ```plaintext
 forohub/
@@ -118,49 +105,56 @@ forohub/
 │   │   │       │   ├── service/
 │   │   │       │   └── springdoc/
 │   │   │       └── ForohubApplication.java
-│   ├── resources/
-│   │   ├── db.migration/
-│   │   ├── static/
-│   │   ├── templates/
-│   │   └── application.properties
+│   │   └── resources/
+│   │       ├── db.migration/
+│   │       ├── static/
+│   │       ├── templates/
+│   │       └── application.properties
 ├── test/
 ```
 
----
 
-
-## 📈 Avance del Proyecto  
-
-### Funcionalidades Completadas  
-- [x] Autenticación de usuarios.  
-- [x] Creación de temas en foros.  
-- [x] Asociación de cursos con temas.  
-
-### Próximas Funcionalidades  
-- [ ] Sistema de notificaciones.  
-- [ ] Estadísticas de uso.  
 
 ---
 
-## 🤝 Contribución  
-¡Las contribuciones son bienvenidas! Para contribuir:  
-1. Haz un fork del proyecto.  
-2. Crea una nueva rama:  
-   ```bash  
-   git checkout -b feature/nueva-funcionalidad  
-   ```  
-3. Realiza tus cambios y haz un commit:  
-   ```bash  
-   git commit -m "Añadida nueva funcionalidad"  
-   ```  
-4. Sube tus cambios:  
-   ```bash  
-   git push origin feature/nueva-funcionalidad  
-   ```  
-5. Abre un pull request en el repositorio principal.  
+## 📈 Avance del Proyecto
+
+### Funcionalidades Completadas
+- ✅ Autenticación de usuarios.
+- ✅ Creación y gestión de temas en foros.
+- ✅ Asociación de cursos con temas.
+
+### Próximas Funcionalidades
+- ⏱️ Sistema de notificaciones.
+- 📊 Estadísticas de uso y participación.
 
 ---
 
-## 📜 Licencia  
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.  
+## 🤝 Contribución
 
+¡Tu ayuda es invaluable! Si deseas contribuir, sigue estos sencillos pasos:
+
+1.  Haz un `fork` del repositorio.
+2.  Crea una nueva rama para tus cambios:
+    ```bash
+    git checkout -b feature/nueva-funcionalidad
+    ```
+3.  Realiza tus cambios y haz un `commit`:
+    ```bash
+    git commit -m "feat: Añadida nueva funcionalidad"
+    ```
+4.  Sube tus cambios a tu `fork`:
+    ```bash
+    git push origin feature/nueva-funcionalidad
+    ```
+5.  Abre un `pull request` en el repositorio principal.
+
+---
+
+## 📜 Licencia
+
+Este proyecto está liberado bajo la **Licencia MIT**. Para más detalles, consulta el archivo `LICENSE`.
+
+---
+
+© Derechos reservados por **Jose Aruquipa** @2025.
