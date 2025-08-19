@@ -70,6 +70,7 @@ El proyecto sigue una arquitectura modular y escalable, dividida en capas para u
     ```
 
 4.  **Acceder a la documentación de la API**:
+    🌐 [Swagger UIWEB](https://swagger.io/)
     🌐 [Swagger UI](http://localhost:8080/swagger-ui.html)
 
 ---
